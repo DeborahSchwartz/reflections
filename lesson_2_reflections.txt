@@ -14,3 +14,12 @@ There are several variations on git diff:
 
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 Branches help when adding different features - maybe to test them out while keeping the main, working code in place. Or maybe because different versions will be released (different languages or differnt levels of difficult, for example)
+
+How do the diagrams help you visualize the branch structure?
+It shows all the branches in a visual way, rather than the linear way of a git log. Then, I can see the unreachables and the parent of each commit.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+When two branches are merged, all the changes from both branches are made into the master (if the master is the branch merged). We put it in the diagram because the merged branch now has two parents.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+Automatic merging saves some time when it is clear to Git what should be done. Manually merging allows humans to decide what should happen after changes have been made, since Git doesn't know the outside logic of what should be changed.
