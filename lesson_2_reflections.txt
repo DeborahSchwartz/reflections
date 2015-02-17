@@ -3,3 +3,14 @@ Initializing a repository creates a hidden file, .git, which includes all the ve
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 The staging area is a place to put files that have changed, but not ready to commit as a single batch or a logical unit of work. The working directory is just where the files are and the repository keeps a log of all commits in the .git hidden file.
+
+How can you use the staging area to make sure you have one commit per logical change?
+There are several variations on git diff:
+	git diff (no arguments): compares working directory and staging area
+	git diff --staged: compares staging area and last commit
+	git diff [commitid1] [dommitid2]: compared two different commits
+
+	I could use git reset --hard which discards changes in working direcbory and the staging area, but remember this is not reversible.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches help when adding different features - maybe to test them out while keeping the main, working code in place. Or maybe because different versions will be released (different languages or differnt levels of difficult, for example)
