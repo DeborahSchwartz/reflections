@@ -14,3 +14,6 @@ You can work without being on the Internet.
 
 How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
 I could zip up my files and email them to a coworker to check. Then, I wouldn't have to learn Git and GitHub (a huge task!). However, this would require quite a bit of manual coordination since things/changes would be on local computers and could easily get lost and out of sync. Despite the learning curve, GitHub keeps all changes in a logical way so coworkers can go back, add changes, review changes, etc.
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+I think of the master branch as code that is working and reviewed - yes, the master. I would create a separate branch so I can play around and add features without breaking the master. I could get the branch reviewed using forks, test, and then know that when everything is approved, I can merge my changes with my great new feature into the master.
